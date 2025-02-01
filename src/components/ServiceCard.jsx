@@ -48,7 +48,7 @@ let pos1 = ordre%2==0 ? 2 : 1;
         <h2 className="text-xl font-bold p-2">
           Développement <span className="text_gradient">Web & Mobile </span> sur mesure
         </h2>
-        <ul className="mt-3 mb-2 flex flex-wrap gap-1 [&>li]:p-2 [&>li]:border [&>li]:rounded-2xl">
+        <ul className="px-2 mt-3 mb-2 flex flex-wrap gap-1 [&>li]:p-2 [&>li]:border [&>li]:rounded-2xl">
           <li>Sites vitrine</li>
           <li>App de gestion</li>
           <li>Application hybride</li>

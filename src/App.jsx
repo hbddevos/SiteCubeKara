@@ -9,10 +9,10 @@ import Hero from "./components/Hero.jsx";
 function App() {
 
   
-  window.addEventListener('scroll', () => {
-    console.log(window.scrollY)
-  })
-  
+  // window.addEventListener('scroll', () => {
+  //   console.log(window.scrollY)
+  // })
+
   return (
     <>
       <div className="relative">
@@ -23,10 +23,10 @@ function App() {
         <Hero />
 
         {/* Partenaires */}
-        <section className="mt-20 mb-10 flex  overflow-x-scroll [&>img]:h-28 gap-x-4 justify-center items-center bg-gray-100 py-5">
-          <img src="/assets/Logo_CUBE.png" alt="Logo_CUBE" />
-          <img src="/assets/Logo_Prime_Classpng.png" alt="Logo_Prime_Class" />
-          <img src="/assets/CUBE_dev.jpeg.jpg" alt="CUBE_dev" />
+        <section className="mt-20 mb-10 px-5 flex  overflow-x-scroll [&>img]:h-28 gap-x-4 justify-between items-center bg-gray-100 py-5">
+          <img className="" src="/assets/Logo_CUBE.png" alt="Logo_CUBE" />
+          <img className="" src="/assets/Logo_Prime_Classpng.png" alt="Logo_Prime_Class" />
+          <img className="" src="/assets/CUBE_dev.jpeg.jpg" alt="CUBE_dev" />
         </section>
 
         {/* A-propos */}
@@ -75,7 +75,7 @@ function App() {
               sommes disponibles à tout moment avec vous.
             </p>
           </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-2 md:gap-2 mx-auto">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-2 md:gap-2 mx-auto px-2">
             <ServiceCard ordre="1" />
             <ServiceCard ordre="2" />
             <ServiceCard ordre="3" />
@@ -101,7 +101,7 @@ function App() {
             </p>
           </div>
 
-          <div className="mt-12 grid grid-cols-1 lg:grid-cols-2 gap-5 mx-auto">
+          <div className="mt-12 grid grid-cols-1 lg:grid-cols-2 gap-5 mx-auto p-2">
             <FormationCard />
             <FormationCard />
           </div>
@@ -110,7 +110,7 @@ function App() {
         {/* Testimonial */}
         <section className="mt-12">
           <h2 className="title2 mb-10 px-2">Témoignages</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-1 gap-y-2 lg:grid-cols-3">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-1 gap-y-2 lg:grid-cols-3 p-2">
             <TestimonialCard />
             <TestimonialCard />
             <TestimonialCard />

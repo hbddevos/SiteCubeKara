@@ -35,9 +35,9 @@ export default function Header() {
           viewBox="0 0 24 24"
           fill="none"
           stroke="currentColor"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           className="text-white"
         >
           <path stroke="none" d="M0 0h24v24H0z" fill="none" />
@@ -95,9 +95,9 @@ export default function Header() {
               viewBox="0 0 24 24"
               fill="none"
               stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
               className=""
             >
               <path stroke="none" d="M0 0h24v24H0z" fill="none" />
