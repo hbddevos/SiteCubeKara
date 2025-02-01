@@ -4,7 +4,7 @@ export default function Hero() {
   return (
     <section className="md:flex justify-between items-center md:gap-5">
           <div className="md:w-1/2">
-            <h1 className="title mt-5 p-5 leading-none uppercase">
+            <h1 className="title mt-5 leading-none uppercase">
               De <span className="text_gradient">l'idée</span> au monde, nous
               entrepreunons <span className="text_gradient">l'impossible</span>
               {/* Nous Créons des <span className="text_gradient">solutions</span>{" "}

@@ -43,12 +43,12 @@ let pos1 = ordre%2==0 ? 2 : 1;
     //   </div>
     // </div>
 
-    <div className="border-[0.001rem] border-gray-400 rounded-2xl h-[480px] w-[484px] md:w-full mx-auto flex flex-col card_gradient">
+    <div className="border-[0.001rem] border-gray-400 rounded-2xl h-[480px] w-[400px] md:w-full mx-auto flex flex-col card_gradient">
       <div className={`relative h-1/2 order-${ pos1 }`}>
         <h2 className="text-xl font-bold p-2">
           Développement <span className="text_gradient">Web & Mobile </span> sur mesure
         </h2>
-        <ul className="mt-3 mb-2 p-2 flex flex-wrap gap-1 [&>li]:p-2 [&>li]:border [&>li]:rounded-2xl">
+        <ul className="mt-3 mb-2 flex flex-wrap gap-1 [&>li]:p-2 [&>li]:border [&>li]:rounded-2xl">
           <li>Sites vitrine</li>
           <li>App de gestion</li>
           <li>Application hybride</li>

@@ -44,15 +44,19 @@ function App() {
           <div className="grid md:grid-cols-2 gap-2">
             <video
               className="w-full  h-full mx-auto rounded-lg"
-              src="/assets/rebour.mp4"
-            ></video>
+              controls
+              autoPlay
+              
+            >
+              <source src="/assets/rebour.mp4" />
+            </video>
 
             <Accordion />
           </div>
         </section>
 
         {/* Services */}
-        <section className="px-5 mt-5 mb-16">
+        <section className="mt-5 mb-16">
           <div className="mb-10">
             <h2 className="title2 mb-5">
               Nos{" "}
@@ -65,7 +69,7 @@ function App() {
               sommes disponibles à tout moment avec vous.
             </p>
           </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-2 md:gap-0 mx-auto">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-2 md:gap-2 mx-auto">
             <ServiceCard ordre="1" />
             <ServiceCard ordre="2" />
             <ServiceCard ordre="3" />
@@ -74,7 +78,7 @@ function App() {
         </section>
 
         {/* Formations */}
-        <section className="px-5 mt-5">
+        <section className="mt-5">
           <div className="mb-16">
             <h2 className="title2 mb-5">
               Nos <span className="text_gradient">formations</span>
@@ -99,8 +103,8 @@ function App() {
 
         {/* Testimonial */}
         <section className="mt-12">
-          <h2 className="title2 mb-8">Témoignages</h2>
-          <div className="flex items-center flex-wrap gap-y-2">
+          <h2 className="title2 mb-10">Témoignages</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-1 gap-y-2 lg:grid-cols-3">
             <TestimonialCard />
             <TestimonialCard />
             <TestimonialCard />
