@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+    .title{
+        @apply text-6xl font-bold md:text-5xl;
+    }
+    .title2{
+        @apply text-5xl font-bold;
+    }
+
+    .subtitle{
+        @apply text-2xl font-bold ;
+    }
+
+    .content{
+        @apply text-xl leading-normal;
+    }
+    .button{
+        @apply bg-[#008080];
+    }
+
+    .card_gradient{
+        @apply bg-gradient-to-br from-slate-800  to-[#00809e];
+    }
+    .text_gradient{
+        @apply bg-gradient-to-r from-[#209b87] via-[#008080] to-[#00809e] text-transparent bg-clip-text;
+    }
+    /* .text_gradient{
+        @apply bg-gradient-to-r from-[#209b87] to-[#4db686] text-transparent bg-clip-text;
+    } */
+}
+
+@layer utilities{
+    .shpape_circle{
+        shape-outside: circle();
+        clip-path: circle();
+    }
+}
