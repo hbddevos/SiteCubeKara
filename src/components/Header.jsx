@@ -6,13 +6,26 @@ export default function Header() {
   const toggleClassVisible = () => {
     setIsNavBarMobileOpen(!isNavBarMobileOpen);
   };
+
+
   return (
     <header
       className="h-20
+      fixed
+      top-0
+      left-0
+      right-0
+      z-30
            {/* border-gray-500*/}
-             p-5 flex justify-between items-center bg-transparent backdrop-blur-md"
+             p-5 flex justify-between items-center bg-transparent backdrop-blur-md
+             "
     >
-      <div>logo</div>
+      <div className="absolute bg-transparent inset-0 -z-10">
+
+      </div>
+      <a href="/" className="h-full w-40 cursor-pointer">
+        <img src="/Logo_CUBE.svg" alt="Logo" />
+      </a>
 
       <div id="menu_icon" className="md:hidden cursor-pointer" onClick={toggleClassVisible}>
         <svg
@@ -25,7 +38,7 @@ export default function Header() {
           stroke-width="2"
           stroke-linecap="round"
           stroke-linejoin="round"
-          className="icon icon-tabler icons-tabler-outline icon-tabler-menu-2"
+          className="text-white"
         >
           <path stroke="none" d="M0 0h24v24H0z" fill="none" />
           <path d="M4 6l16 0" />

@@ -7,6 +7,12 @@ import Header from "./components/Header.jsx";
 import Hero from "./components/Hero.jsx";
 
 function App() {
+
+  
+  window.addEventListener('scroll', () => {
+    console.log(window.scrollY)
+  })
+  
   return (
     <>
       <div className="relative">
@@ -17,10 +23,10 @@ function App() {
         <Hero />
 
         {/* Partenaires */}
-        <section className="mt-20 mb-10 flex w-full overflow-x-scroll [&>img]:h-28 gap-x-4 justify-center items-center bg-gray-100 py-2">
-          <img src="/assets/Logo_CUBE.png" alt="" />
-          <img src="/assets/Logo_Prime_Classpng.png" alt="" />
-          <img src="/assets/CUBE_dev.jpeg.jpg" alt="" />
+        <section className="mt-20 mb-10 flex  overflow-x-scroll [&>img]:h-28 gap-x-4 justify-center items-center bg-gray-100 py-5">
+          <img src="/assets/Logo_CUBE.png" alt="Logo_CUBE" />
+          <img src="/assets/Logo_Prime_Classpng.png" alt="Logo_Prime_Class" />
+          <img src="/assets/CUBE_dev.jpeg.jpg" alt="CUBE_dev" />
         </section>
 
         {/* A-propos */}
