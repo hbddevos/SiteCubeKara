@@ -32,7 +32,7 @@ function App() {
             flex items-center
             "
             >
-              <span className="block ">A propos</span>
+              <span className="block p-2">A propos</span>
               <div className="ml-10 w-16 h-1 bg-white md:inline-block  hidden border"></div>
             </h2>
             <p className="w-1/2 p-2">
@@ -58,13 +58,13 @@ function App() {
         {/* Services */}
         <section className="mt-5 mb-16">
           <div className="mb-10">
-            <h2 className="title2 mb-5">
+            <h2 className="title2 mb-5 px-2">
               Nos{" "}
               <span className="bg-gradient-to-r from-red-700 to-blue-800 text-transparent bg-clip-text">
                 services
               </span>
             </h2>
-            <p className="px-5 content mb-5">
+            <p className="px-2 content mb-5">
               Nous avons les meilleurs offres de services sur le marché et
               sommes disponibles à tout moment avec vous.
             </p>
@@ -80,13 +80,13 @@ function App() {
         {/* Formations */}
         <section className="mt-5">
           <div className="mb-16">
-            <h2 className="title2 mb-5">
+            <h2 className="title2 mb-5 px-2">
               Nos <span className="text_gradient">formations</span>
             </h2>
-            <h4 className="subtitle mb-5">
+            <h4 className="subtitle mb-5 px-2">
               🌟 Transformez votre avenir avec nos formations expertes ! 🌟
             </h4>
-            <p className="">
+            <p className="px-2">
               Vous rêvez de maîtriser les compétences les plus demandées dans le
               domaine du numérique ? Que ce soit pour devenir un as du
               développement web, créer des applications mobiles innovantes, ou
@@ -103,7 +103,7 @@ function App() {
 
         {/* Testimonial */}
         <section className="mt-12">
-          <h2 className="title2 mb-10">Témoignages</h2>
+          <h2 className="title2 mb-10 px-2">Témoignages</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-x-1 gap-y-2 lg:grid-cols-3">
             <TestimonialCard />
             <TestimonialCard />

@@ -4,13 +4,13 @@ export default function Hero() {
   return (
     <section className="md:flex justify-between items-center md:gap-5">
           <div className="md:w-1/2">
-            <h1 className="title mt-5 leading-none uppercase">
+            <h1 className="px-2 title mt-5 text-balance leading-none tracking-tighter uppercase">
               De <span className="text_gradient">l'idée</span> au monde, nous
               entrepreunons <span className="text_gradient">l'impossible</span>
               {/* Nous Créons des <span className="text_gradient">solutions</span>{" "}
               sur mésure pour vous et pour votre entreprise */}
             </h1>
-            <p className="p-5 content">
+            <p className="p-2 content mt-5 mb-5">
               Nous sommes une équipe spécialisée dans la conceprion de solution
               sur mésure pour toute personne et pour tout type d'entreprise.{" "}
               <br />
@@ -20,7 +20,7 @@ export default function Hero() {
             <br />
             <a
               href="#"
-              className="p-5 button text-white text-xl rounded-2xl m-5"
+              className="p-5 button text-white text-xl rounded-2xl mx-2 mb-10"
             >
               Nous contacter
             </a>

@@ -10,19 +10,19 @@ export default function Accordion() {
     {
       id: "accordion1",
       question: "Qui sommes nous ?",
-      answer: "NOus sommes une entreprise spécialisé dans l'accompagnement de personnes désireux de creer une entreprise et dans l'accompagnement de personne désireux de digitaliser",
+      answer: "Nous sommes une entreprise spécialisé dans l'accompagnement de personnes désireux de creer une entreprise et dans l'accompagnement de personne désireux de digitaliser",
     },
     {
       id: "accordion2",
       question: "Nos valeurs",
       answer:
-        "Add AlpineJS and TailwindCSS to your page and then copy and paste any of these elements into your project.",
+        "Je dois trouver un moyen pour afficher une liste ici",
     },
     {
       id: "accordion3",
-      question: "Can I use Pines with other libraries or frameworks?",
+      question: "Pourquoi choisir nos services ?",
       answer:
-        "Absolutely! Pines works with any other library or framework. Pines works especially well with the TALL stack.",
+        "Autres informations a remplir",
     },
   ];
 
