@@ -9,7 +9,6 @@ export default function Header() {
   return (
     <header
       className="h-20
-           border-2
            {/* border-gray-500*/}
              p-5 flex justify-between items-center bg-transparent backdrop-blur-md"
     >
