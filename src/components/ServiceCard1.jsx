@@ -32,7 +32,7 @@ function ServiceCard1({variant}) {
             </div>
             <div className="mt-4 md:h-52 md:w-full mx-auto">
                 <img className="rounded-2xl w-full h-full object-cover aspect-square"
-                     src="../src/assets/images/dev-mark.jpg" alt=""/>
+                     src="/assets/images/dev-mark.jpg" alt=""/>
             </div>
         </div>
     );

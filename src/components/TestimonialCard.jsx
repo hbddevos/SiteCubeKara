@@ -6,7 +6,7 @@ export default function TestimonialCard() {
       <div className="absolute -top-10 right-2 w-20 h-20 rounded-full border shpape_circle button">
         <img
           className="w-full h-full object-cover"
-          src="../src/assets/images/lara3d.png"
+          src="/assets/images/lara3d.png"
           alt=""
         />
       </div>

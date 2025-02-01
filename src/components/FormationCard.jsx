@@ -4,8 +4,8 @@ import React from "react";
 function FormationCard({ title, description, image, link }) {
   return (
     // <div className="relative">
-    //   <div className={`rounded-lg bg-[url('../src/assets/images/${ image }')] bg-cover bg-center absolute inset-0`}>
-    //   {/* <img className="w-full h-full object-cover" src={`../src/assets/images/${ image }`} alt="" /> */}
+    //   <div className={`rounded-lg bg-[url('/assets/images/${ image }')] bg-cover bg-center absolute inset-0`}>
+    //   {/* <img className="w-full h-full object-cover" src={`/assets/images/${ image }`} alt="" /> */}
     //   </div>
     //   <div className="absolute inset-0 bg-black bg-opacity-65 rounded-lg z-20"></div>
     //   <div className="relative z-40 p-6 text-white">
@@ -16,12 +16,12 @@ function FormationCard({ title, description, image, link }) {
     //     </a>
     //   </div>
     // </div>
-    // <div className="w-full border h-80 md:h-80 rounded-md text-white relative z-10 bg-[url(../src/assets/images/lara3d.png)] card_gradient bg-no-repeat bg-cover bg-center ">
+    // <div className="w-full border h-80 md:h-80 rounded-md text-white relative z-10 bg-[url(/assets/images/lara3d.png)] card_gradient bg-no-repeat bg-cover bg-center ">
     <div className="w-full flex border h-80 md:h-80 lg:h-96 rounded-md text-white relative z-10 bg- card_gradient">
       <div className="sm:w-1/2 -z-10 h-full absolute sm:static inset-0">
         <img
           className="h-full object-cover aspect-square md:object-right"
-          src="../src/assets/images/lara3d.png"
+          src="/assets/images/lara3d.png"
           alt=""
         />
       </div>

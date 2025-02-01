@@ -37,7 +37,7 @@ let pos1 = ordre%2==0 ? 2 : 1;
     //   <div className="mt-8 md:w-56 h-64">
     //     <img
     //       className="rounded-2xl h-full w-full  object-cover "
-    //       src="../src/assets/images/dev-mark.jpg"
+    //       src="/assets/images/dev-mark.jpg"
     //       alt=""
     //     />
     //   </div>
@@ -62,7 +62,7 @@ let pos1 = ordre%2==0 ? 2 : 1;
       <div className={`relative h-1/2`}>
         <img
           className="rounded-2xl h-full w-full  object-cover"
-          src="../src/assets/images/dev-mark.jpg"
+          src="/assets/images/dev-mark.jpg"
           alt="service image"
         />
       </div>

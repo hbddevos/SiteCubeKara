@@ -28,7 +28,7 @@ export default function Hero() {
           <div className="w-full md:w-1/2 backdrop-blur-xl bg-transparent mt-8 rounded-2xl mx-5">
             <img
               className="w-full h-full object-cover"
-              src="../src/assets/images/dev-mark.png"
+              src="/assets/images/dev-mark.png"
               alt="hero-img"
             />
           </div>

@@ -18,9 +18,9 @@ function App() {
 
         {/* Partenaires */}
         <section className="mt-20 mb-10 flex w-full overflow-x-scroll [&>img]:h-28 gap-x-4 justify-center items-center bg-gray-100 py-2">
-          <img src="../src/assets/Logo_CUBE.png" alt="" />
-          <img src="../src/assets/Logo_Prime_Classpng.png" alt="" />
-          <img src="../src/assets/CUBE_dev.jpeg.jpg" alt="" />
+          <img src="/assets/Logo_CUBE.png" alt="" />
+          <img src="/assets/Logo_Prime_Classpng.png" alt="" />
+          <img src="/assets/CUBE_dev.jpeg.jpg" alt="" />
         </section>
 
         {/* A-propos */}
@@ -44,7 +44,7 @@ function App() {
           <div className="grid md:grid-cols-2 gap-2">
             <video
               className="w-full  h-full mx-auto rounded-lg"
-              src="../src/assets/rebour.mp4"
+              src="/assets/rebour.mp4"
             ></video>
 
             <Accordion />
