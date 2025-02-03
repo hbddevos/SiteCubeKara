@@ -1,8 +1,8 @@
 import { div } from "motion/react-client";
 import React from "react";
 
-function ServiceCard({ordre}) {
-let pos1 = ordre%2==0 ? 2 : 1;
+function ServiceCard({ ordre }) {
+  // let pos1 = ordre % 2 == 0 ? 2 : 1;
   return (
     // <div className="md:col-span-2 w-[400px] md:w-full mx-auto md:flex gap-5 md:justify-between px-5 py-4 bg-[#F07167] bg-opacity-30 rounded-2xl">
     //   <div className="card md:w-3/5">
@@ -43,29 +43,32 @@ let pos1 = ordre%2==0 ? 2 : 1;
     //   </div>
     // </div>
 
-    <div className="border-[0.001rem] border-gray-400 rounded-2xl h-[480px] w-[400px] md:w-full mx-auto flex flex-col card_gradient">
-      <div className={`relative h-1/2 order-${ pos1 }`}>
-        <h2 className="text-xl font-bold p-2">
-          Développement <span className="text_gradient">Web & Mobile </span> sur mesure
+    <div className="rounded-2xl p-6 md:pt-8 lg:pt-10 pb-4 relative shadow-lg mx-auto flex flex-col bg-[#004d4d14]">
+      <div className={` `}>
+        <h2 className="subtitle">
+          Développement <span className="text_gradient">Web & Mobile </span> sur
+          mesure
         </h2>
-        <ul className="px-2 mt-3 mb-2 flex flex-wrap gap-1 [&>li]:p-2 [&>li]:border [&>li]:rounded-2xl">
+        <ul className="px-2 mt-3 mb-2 flex flex-wrap gap-1 [&>li]:p-2 [&>li]:border [&>li]:border-[#008080] [&>li]:rounded-2xl">
           <li>Sites vitrine</li>
           <li>App de gestion</li>
           <li>Application hybride</li>
           <li>E-commerce</li>
           <li>Blog</li>
         </ul>
-        <button className="absolute bottom-2 right-2 bg-gray-900 text-white p-3 rounded-2xl">
+      </div>
+        <div className="flex items-end justify-end mt-5">
+        <button className="h-20 w-20 rounded-full flex items-center justify-center bg-[#008080] text-white p-2">
           icone
         </button>
-      </div>
-      <div className={`relative h-1/2`}>
+        </div>
+      {/* <div className={`relative h-1/2`}>
         <img
           className="rounded-2xl h-full w-full  object-cover"
           src="/assets/images/dev-mark.jpg"
           alt="service image"
         />
-      </div>
+      </div> */}
     </div>
   );
 }

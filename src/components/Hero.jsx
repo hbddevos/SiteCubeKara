@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Hero() {
   return (
-    <section className="md:flex justify-between items-center md:gap-5 mt-24">
+    <section className="md:flex justify-between items-center md:gap-5 mt-28 md:mt-2">
           <div className="md:w-1/2">
             <h1 className="px-2 title mt-5 text-balance leading-none tracking-tighter uppercase">
               De <span className="text_gradient">l'idée</span> au monde, nous

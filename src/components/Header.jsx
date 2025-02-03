@@ -10,19 +10,21 @@ export default function Header() {
 
   return (
     <header
-      className="h-20
+      className="h-24
+      text-white
       fixed
       top-0
       left-0
       right-0
       z-30
+      bg-[#008080]
            {/* border-gray-500*/}
-             p-5 flex justify-between items-center bg-transparent backdrop-blur-md
+             p-5 flex justify-between items-center
              "
     >
-      <div className="absolute bg-transparent inset-0 -z-10">
+      {/* <div className="absolute bg-transparent inset-0 -z-10">
 
-      </div>
+      </div> */}
       <a href="/" className="h-full w-40 cursor-pointer">
         <img src="/Logo_CUBE.svg" alt="Logo" />
       </a>
@@ -38,7 +40,7 @@ export default function Header() {
           strokeWidth="2"
           strokeLinecap="round"
           strokeLinejoin="round"
-          className="text-white"
+          // className="text-white"
         >
           <path stroke="none" d="M0 0h24v24H0z" fill="none" />
           <path d="M4 6l16 0" />
@@ -46,21 +48,21 @@ export default function Header() {
           <path d="M4 18l16 0" />
         </svg>
       </div>
-      <div className="text-white hidden md:block">
-        <ul className="flex [&>li]:mx-2 [&>li>a]:max-w-max  text-xl">
-          <li>
+      <div className="hidden md:block">
+        <ul className="flex [&>li]:mx-2 [&>li>a]:max-w-max text-xl">
+          <li className="hover:text-[#004d4d] hover:underline hover:underline-offset-4 transition">
             <a href="#">Home</a>
           </li>
-          <li>
+          <li className="hover:text-[#004d4d] hover:underline hover:underline-offset-4 transition">
             <a href="#">A-propos</a>
           </li>
-          <li>
+          <li className="hover:text-[#004d4d] hover:underline hover:underline-offset-4 transition">
             <a href="#">services</a>
           </li>
-          <li>
+          <li className="hover:text-[#004d4d] hover:underline hover:underline-offset-4 transition">
             <a href="#">Contacts</a>
           </li>
-          <li>
+          <li className="hover:text-[#004d4d] hover:underline hover:underline-offset-4 transition">
             <a href="">Button</a>
           </li>
         </ul>
@@ -81,7 +83,7 @@ export default function Header() {
                   bg-opacity-15
                   from-[#2c99a8]
                   to-[#053e49]
-                  backdrop-blur-3xlxl
+                  backdrop-blur-3xl
                    {/*h-4/6*/}
                     rounded-2xl
                      text-white`}

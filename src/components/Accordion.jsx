@@ -27,9 +27,9 @@ export default function Accordion() {
   ];
 
   return (
-    <div className="relative flex flex-col gap-1 w-full mx-auto overflow-hidden text-sm font-normaldivide-y divide-gray-200 rounded-2xl text-white">
+    <div className="relative flex flex-col gap-1 w-full mx-auto overflow-hidden text-sm font-normaldivide-y divide-gray-200 rounded-2xl text-black">
       {accordionItems.map((item) => (
-        <div key={item.id} className="cursor-pointer group rounded-2xl border bg-gray-800">
+        <div key={item.id} className="cursor-pointer group rounded-2xl border bg-[#004d4d14]">
           <button
             onClick={() => toggleAccordion(item.id)}
             className="flex items-center justify-between w-full p-4 text-left select-none group-hover:underline text-2xl font-bold tracking-tighter -leading-3 uppercase"
