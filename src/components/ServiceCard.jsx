@@ -1,75 +1,52 @@
-import { div } from "motion/react-client";
 import React from "react";
+import { motion } from "motion/react";
 
 function ServiceCard({ ordre }) {
-  // let pos1 = ordre % 2 == 0 ? 2 : 1;
   return (
-    // <div className="md:col-span-2 w-[400px] md:w-full mx-auto md:flex gap-5 md:justify-between px-5 py-4 bg-[#F07167] bg-opacity-30 rounded-2xl">
-    //   <div className="card md:w-3/5">
-    //     <h2 className="subtitle text-left mb-4">
-    //       Développement Web et Mobile sur mesure
-    //     </h2>
-    //     <p className="text-left text-base">
-    //       <ul className="flex flex-col gap-5">
-    //         <li className="flex gap-2">
-    //           <span className="flex justify-center items-center font-bold text-white h-6 p-2 w-6 md:h-10 md:w-10 rounded-full bg-red-900">
-    //             1
-    //           </span>
-    //           Nous créons des sites professionnels et optimisés pour présenter
-    //           votre activité ou votre entreprise
-    //         </li>
-    //         <li className="flex gap-2">
-    //           <span className="flex justify-center items-center font-bold text-white h-6 p-2 w-6 md:h-10 md:w-10 rounded-full bg-red-900">
-    //             2
-    //           </span>
-    //           Création d'application web personnalisée, gestion de boutique,
-    //           gestion de stock, gestion de restaurant etc....
-    //         </li>
-    //         <li className="flex justify-start gap-2">
-    //           <span className="flex justify-center items-center font-bold text-white h-6 p-2 w-6 md:h-10 md:w-10 rounded-full bg-red-900">
-    //             1
-    //           </span>
-    //           Création d'application IOS & Android
-    //         </li>
-    //       </ul>
-    //     </p>
-    //   </div>
-    //   <div className="mt-8 md:w-56 h-64">
-    //     <img
-    //       className="rounded-2xl h-full w-full  object-cover "
-    //       src="/assets/images/dev-mark.jpg"
-    //       alt=""
-    //     />
-    //   </div>
-    // </div>
-
-    <div className="rounded-2xl p-6 md:pt-8 lg:pt-10 pb-4 relative shadow-lg mx-auto flex flex-col bg-[#004d4d14]">
-      <div className={` `}>
+    <motion.div 
+      className="rounded-2xl p-6 md:pt-8 lg:pt-10 pb-4 relative shadow-lg mx-auto flex flex-col bg-[#004d4d14]"
+      initial={{ opacity: 0, y: 60 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.2 }}
+      transition={{ duration: 0.6, delay: ordre * 0.15, ease: [0.25, 0.46, 0.45, 0.94] }}
+      whileHover={{ y: -10, boxShadow: '0 20px 40px rgba(0,0,0,0.15)' }}
+    >
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true }}
+        transition={{ delay: 0.3, duration: 0.5 }}
+      >
         <h2 className="subtitle">
-          Développement <span className="text_gradient">Web & Mobile </span> sur
-          mesure
+          Développement <span className="text_gradient">Web & Mobile </span> sur mesure
         </h2>
         <ul className="px-2 mt-3 mb-2 flex flex-wrap gap-1 [&>li]:p-2 [&>li]:border [&>li]:border-[#008080] [&>li]:rounded-2xl">
-          <li>Sites vitrine</li>
-          <li>App de gestion</li>
-          <li>Application hybride</li>
-          <li>E-commerce</li>
-          <li>Blog</li>
+          {['Sites vitrine', 'App de gestion', 'Application hybride', 'E-commerce', 'Blog'].map((tag, index) => (
+            <motion.li
+              key={tag}
+              initial={{ opacity: 0, scale: 0.8 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.4 + index * 0.05, duration: 0.3 }}
+              whileHover={{ backgroundColor: '#008080', color: 'white' }}
+            >
+              {tag}
+            </motion.li>
+          ))}
         </ul>
-      </div>
-        <div className="flex items-end justify-end mt-5">
+      </motion.div>
+      <motion.div 
+        className="flex items-end justify-end mt-5"
+        initial={{ opacity: 0, scale: 0 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        viewport={{ once: true }}
+        transition={{ delay: 0.6, duration: 0.4, type: "spring", stiffness: 200 }}
+      >
         <button className="h-20 w-20 rounded-full flex items-center justify-center bg-[#008080] text-white p-2">
           icone
         </button>
-        </div>
-      {/* <div className={`relative h-1/2`}>
-        <img
-          className="rounded-2xl h-full w-full  object-cover"
-          src="/assets/images/dev-mark.jpg"
-          alt="service image"
-        />
-      </div> */}
-    </div>
+      </motion.div>
+    </motion.div>
   );
 }
 
